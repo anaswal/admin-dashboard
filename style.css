@@ -10,7 +10,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 20vh 80vh;
+  grid-template-rows: 25vh 75vh;
 }
 
 .first-con {
@@ -22,10 +22,14 @@
 
 .second-con {
   grid-row: 1 / 2;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 1.3rem 2rem;
 }
 
 .third-con {
   grid-row: 2 / 3;
+  background-color: #e9ecef;
 }
 
 .header {
@@ -59,4 +63,60 @@ a > span {
 
 .last {
   margin-bottom: 2rem;
+}
+
+.second-con-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.search > span {
+  font-size: 1.5rem;
+}
+
+input {
+  width: 400px;
+  border: none;
+  background-color: #e9ecef;
+  border-radius: 20px;
+  padding: 0.5rem;
+  margin-right: 350px;
+}
+
+.profile {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.p-smaller {
+  width: 10%;
+}
+
+.con-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  cursor: pointer;
+  background-color: #219ebc;
+  color: white;
+  margin-left: 1rem;
+}
+
+button:hover {
+  background-color: #8ecae6;
+  transition: all 0.5s;
 }
