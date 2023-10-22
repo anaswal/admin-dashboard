@@ -10,7 +10,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 25vh 75vh;
+  grid-template-rows: 25vh 3fr;
 }
 
 .first-con {
@@ -119,4 +119,93 @@ button {
 button:hover {
   background-color: #8ecae6;
   transition: all 0.5s;
+}
+
+.third-con {
+  padding: 1.3rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  width: 300px;
+}
+
+.announce-card {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.paragraph {
+  margin-bottom: 1rem;
+}
+
+.second {
+  padding: 1rem 0;
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.paragraph > p {
+  font-size: 0.7rem;
+}
+
+.card-text > p {
+  font-size: 0.7rem;
+}
+
+.card-icon {
+  text-align: right;
+}
+
+.card-icon > span {
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+.card-icon > span:hover {
+  background-color: #e9ecef;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+}
+
+.trending-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trending-card {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.img-trending {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.trending-name > p {
+  font-size: 0.7rem;
 }
